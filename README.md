@@ -17,14 +17,14 @@ N'oublier pas d'activer l'API de google + dans la console de google developers.
 4-)Configuration de WebMail-JS:
 	-Remplacer informations de WebMail-JS->configs->socialAuth.js par les votres.
 	-Remplacer dans WebMail-JS->app->routes->api.route.js :
-	```
-		var transporter = nodemailer.createTransport({
-		  service: 'gmail',
-		  auth: {
-		    user: 'votre_adresse_gmail',
-		    pass: 'votre_mot_de_passe_gmail'
-		  }
-		});
+```
+var transporter = nodemailer.createTransport({
+service: 'gmail',
+auth: {
+	user: 'votre_adresse_gmail',
+	pass: 'votre_mot_de_passe_gmail'
+}
+});
 		```
 	-Remplacer dans WebMail-JS->server.js : 
 	```
