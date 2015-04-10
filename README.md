@@ -19,8 +19,8 @@ Pour installer et utiliser WebMail-JS suivez les instructions si-après :
 N'oublier pas d'activer l'API de google + dans la console de google developers.
 
 4-)Configuration de WebMail-JS:
-	-Remplacer informations de WebMail-JS->configs->socialAuth.js par les votres.
-	-Remplacer dans WebMail-JS->app->routes->api.route.js :
+ -Remplacer informations de WebMail-JS->configs->socialAuth.js par les votres.
+ -Remplacer dans WebMail-JS->app->routes->api.route.js :
 ```
 var transporter = nodemailer.createTransport({
 service: 'gmail',
@@ -48,7 +48,7 @@ var mailListener = new MailListener({
 ```
 
 5-)Démarrer WebMail-JS : 
-```
-node server.js
-```
+	```
+	node server.js	
+	```
 
