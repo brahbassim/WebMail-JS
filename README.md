@@ -25,7 +25,7 @@ auth: {
 	pass: 'votre_mot_de_passe_gmail'
 }
 });
-		```
+```
 	-Remplacer dans WebMail-JS->server.js : 
 ```
 var mailListener = new MailListener({
@@ -40,7 +40,7 @@ var mailListener = new MailListener({
 		markSeen: true,
 		fetchUnreadOnStart: true, 
 		mailParserOptions: {streamAttachments: true} 
-});
+	});
 ```
 
 5-)Démarrer WebMail-JS : 
