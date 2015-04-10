@@ -17,7 +17,7 @@ N'oublier pas d'activer l'API de google + dans la console de google developers.
 4-)Configuration de WebMail-JS:
 	-Remplacer informations de WebMail-JS->configs->socialAuth.js par les votres.
 	-Remplacer dans WebMail-JS->app->routes->api.route.js :
-	'''
+	```
 		var transporter = nodemailer.createTransport({
 		  service: 'gmail',
 		  auth: {
@@ -25,8 +25,9 @@ N'oublier pas d'activer l'API de google + dans la console de google developers.
 		    pass: 'votre_mot_de_passe_gmail'
 		  }
 		});
-		'''
+		```
 	-Remplacer dans WebMail-JS->server.js : 
+	```
 		var mailListener = new MailListener({
 		  username: "votre_adresse_gmail",
 		  password: "votre_mot_de_passe_gmail",
@@ -40,6 +41,7 @@ N'oublier pas d'activer l'API de google + dans la console de google developers.
 		  fetchUnreadOnStart: true, 
 		  mailParserOptions: {streamAttachments: true} 
 		});
+		```
 
 5-)Démarrer WebMail-JS : 
 node server.js
