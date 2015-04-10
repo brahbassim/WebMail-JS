@@ -26,7 +26,7 @@ auth: {
 }
 });
 ```
----Remplacer dans WebMail-JS->server.js : ---
+***Remplacer dans WebMail-JS->server.js : ***
 ```
 var mailListener = new MailListener({
 	username: "votre_adresse_gmail",
