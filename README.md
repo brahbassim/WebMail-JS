@@ -27,21 +27,21 @@ auth: {
 });
 		```
 	-Remplacer dans WebMail-JS->server.js : 
-	```
-		var mailListener = new MailListener({
-		  username: "votre_adresse_gmail",
-		  password: "votre_mot_de_passe_gmail",
-		  host: "imap.gmail.com",
-		  port: 993,
-		  tls: true,
-		  tlsOptions: { rejectUnauthorized: false },
-		  mailbox: "INBOX",
-		  searchFilter: "UNSEEN", 
-		  markSeen: true,
-		  fetchUnreadOnStart: true, 
-		  mailParserOptions: {streamAttachments: true} 
-		});
-		```
+```
+var mailListener = new MailListener({
+	username: "votre_adresse_gmail",
+	password: "votre_mot_de_passe_gmail",
+	host: "imap.gmail.com",
+		port: 993,
+		tls: true,
+		tlsOptions: { rejectUnauthorized: false },
+		mailbox: "INBOX",
+		searchFilter: "UNSEEN", 
+		markSeen: true,
+		fetchUnreadOnStart: true, 
+		mailParserOptions: {streamAttachments: true} 
+});
+```
 
 5-)Démarrer WebMail-JS : 
 node server.js
